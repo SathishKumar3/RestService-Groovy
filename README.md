@@ -34,16 +34,21 @@ https://documenter.getpostman.com/view/534845/RW87p9pT
 **Features:**
 
  **Basic Authentication:**
+ 
     - Get method to fecth the product info, will be access to all.
     - Post method to update price info, will be secured. (Admin/Admin).
  **Logging:**
+ 
     - Used logback for logging, 
     - Followed logging best pratices helps troubleshooting also helps monitoring tools like Splunk to help creating metrices and 		           dashboards.
-    - Maintaing key values and Transaction id for each request. <br>
+    - Maintaing key values and Transaction id for each request.  
   **RestService:**
-   - RestService template acts as a wrapper class for any rest service calls. <br>
+  
+    - RestService template acts as a wrapper class for any rest service calls. 
+   
   **Documentation:**
-   - Code has been completely documented through unit test case and integration test.
+  
+    - Code has been completely documented through unit test case and integration test.
  
  
  
