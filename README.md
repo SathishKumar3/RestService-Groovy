@@ -47,8 +47,7 @@ C:\Program Files\MongoDB\Server\3.2\bin>mongod (by default, mongodb server will 
     - Get method to fecth the product info, will be access to all.
     - Post method to update price info, will be secured. (Admin/Admin).
 - **Logging:**
-    - Used logback for logging, 
-    - Followed logging best pratices helps troubleshooting and also helps monitoring ,creating metrices and dashboards.
+    - Used logback for logging, Followed logging best pratices helps troubleshooting and also helps monitoring, creating metrices and dashboards.
     - Maintaing key values and Transaction id for each request.  
  - **RestService calls:**
     - RestService template acts as a wrapper class for any rest service calls.    
