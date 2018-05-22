@@ -9,7 +9,7 @@
  
 **Application set up:**
 
- - Java 1.8.0_171 
+ - Java 1.8.0_171 (Need to have java verison >= 1.8.0151, faced issue while mocking for few classes)
  - Install Mongo DB, default port:27017   
  - Maven 
  - Postman (any rest cleint)
