@@ -40,7 +40,7 @@ https://documenter.getpostman.com/view/534845/RW87p9pT
  **Logging:**
  
     - Used logback for logging, 
-    - Followed logging best pratices helps troubleshooting also helps monitoring tools like Splunk to help creating metrices and 		           dashboards.
+    - Followed logging best pratices helps troubleshooting also helps monitoring tools like Splunk to help creating metrices and dashboards.
     - Maintaing key values and Transaction id for each request.  
   **RestService:**
   
