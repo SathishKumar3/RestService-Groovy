@@ -10,7 +10,7 @@
 **Application set up:**
 
  - Java 1.8.0_171 (Need to have java verison >= 1.8.0151, faced issue while mocking few classes)
- - Install Mongo DB, default port:27017   
+ - Install Mongo DB  
  - Maven 
  - Postman (any rest cleint)
  
@@ -22,17 +22,25 @@ https://documenter.getpostman.com/view/534845/RW87p9pT
 **Postman document of Test cases:**
 
 https://documenter.getpostman.com/view/534845/RW87p9pT
+
  
 **To execute Test cases and Integration Test:**
 
  ```sh
-> mvn clean test
+  mvn clean test
+```
+**To start Mongo DB
+ 
+ ```sh
+C:\data\db  (Need to create directory)
+then 
+C:\Program Files\MongoDB\Server\3.2\bin>mongod (by default, mongodb server will start at port 27017)
 ```
 
 **To start application:**
  
  ```sh
->mvn spring-boot:run -Dspring.profiles.active=dev  (Tomcat will starts on default port 8080)
+  mvn spring-boot:run -Dspring.profiles.active=dev  (Tomcat will starts on default port 8080)
 ```
 **Features:**
  - **Basic Authentication:**
