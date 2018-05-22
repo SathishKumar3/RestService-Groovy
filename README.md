@@ -1,62 +1,55 @@
-Grails RestService API
------------------------------
 
-Developed a Profile Restservice 
+**Technology Used :**
 
-GET Method -  fetch profile details by phone number and render JSON reponse
+ 1. Spring boot 2.0.2
+ 2. Java 1.8.0_171 
+ 3. Junit,Mokito 
+ 4. Mongo DB 
+ 5. Maven 
+ 
+**Application set up:**
 
+ -Java 1.8.0_171 
+ -Install Mongo DB, default port:27017   
+ -Maven 
+ -Postman (any rest cleint)
+ 
+ 
+**Swagger Documentation path:**
 
-Technology Used
-----------------
+https://documenter.getpostman.com/view/534845/RW87p9pT
 
- 1, Grails <br>
- 2, Groovy <br>
- 3, Test Framework - Spock <br>
- 4, H2 Inbuit memory DB <br>
- 5, Maven <br>
- 6, Hibernate/GORM - One to Many Relationship <br>
+**Postman document of Test cases:**
+
+https://documenter.getpostman.com/view/534845/RW87p9pT
+ 
+**To execute Test cases and Integration Test:**
+
+>mvn clean test
+
+**To start application:**
+
+>mvn spring-boot:run -Dspring.profiles.active=dev -> Tomcat starts on default port 8080
+
+**Features:**
+
+ ##Basic Authentication:##
+	- Get method to fecth the product info, will be access to all.
+	- Post method to update price info, will be secured. (Admin/Admin) 
+ ##Logging:##
+	- Used logback for logging, 
+	- Followed logging best pratices helps troubleshooting also helps monitoring tools like Splunk to help creating metrices and 		  dashboards.
+	- Maintaing key values and Transaction id for each request.<br>
+ ##RestService:##
+	- RestService template acts as a wrapper class for any rest service calls. <br>
+ ##Documentation:##
+    	- Code has been completely documented through unit test case and integration test.<br>
+ 
+ 
+ 
  
 
-Code Walkthrough
------------------
-
-The Rest Service fetches the Profile Details from the database by PhoneNumber <br>
-Controller => Service => DAO (Uses Dynamic Finders) <br>
-CommonUtil is a static class which helps to validate the input Phone Number<br>
-DAO - Uses GORM dynamic finders to fetch details from H2 Inbuild memory Database<br>
-messages.properties INTERNATIONALIZATION feature, configured the Client response messages <br>
-URL Mapping -> Mapped the URL with the action<br>
-
-Validation  - Using Command Objects
------------------------------------
-
-1 - Phone should be numeric <br>
-2 - Name should not be empty <br>
-3 - Exp should be > 0 <br>
-4 - Email : email format <br>
-5 - Tech should not be empty <br>
-
-GET   - Get Profile details <br>
-
-	Valid Phone number    - Goor Response 
-	--------------------------------------
-
-	eg: 
-	URL - http://localhost:8080/profile/profile?phone=6121111111  
-	URL - http://localhost:8080/profile/profile?phone=6121111112
 
 
-	Phone Number Not Found - 
-	-------------------------
-
-	URL - http://localhost:8080/profile/profile?phone=6121111117
 
 
- 	2) Invalid PhoneNumber 
-	-----------------------
-
-	URL - http://localhost:8080/profile/profile?phone=6121111A
-	URL - http://localhost:8080/profile/profile?phone=6121111111111111
-
-
-POST - Under work 
