@@ -1,4 +1,4 @@
- **Technical Assessment Case StudY -	myRetail RESTful service**
+ **Technical Assessment Case Study -	myRetail RESTful service**
  ----------------------------------------------------------------
 **Technology Used :**
 
@@ -36,7 +36,7 @@ C:\Program Files\MongoDB\Server\3.2\bin>mongod (by default, mongodb server will 
   mvn spring-boot:run -Dspring.profiles.active=dev  (Tomcat will starts on default port 8080)
 ```
 
-**Application endpoints:
+**Application endpoints:**
  
  ```sh
  Get Method  : http://localhost:8080/products/v1/product/{productid}   (Not secured)
@@ -49,12 +49,12 @@ C:\Program Files\MongoDB\Server\3.2\bin>mongod (by default, mongodb server will 
 
 http://localhost:8080/swagger-ui.html#/product-controller
 
-**Postman document of Test cases:**
+**Postman API document:**
 
 https://documenter.getpostman.com/view/534845/RW87p9pT
 
 
-**Features:**
+**Implemented Features:**
  - **Basic Authentication:**
     - Get method to fecth the product info, will be access to all.
     - Post method to update price info, will be secured. (Admin/Admin).
