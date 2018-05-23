@@ -1,4 +1,5 @@
-
+ **Technical Assessment Case StudY -	myRetail RESTful service**
+ ----------------------------------------------------------------
 **Technology Used :**
 
  - Spring boot 2.0.2
@@ -11,23 +12,15 @@
 
  - Java 1.8.0_171 (Need to have java verison >= 1.8.0151, faced issue while mocking few classes)
  - Install Mongo DB  
- - Maven 
- - Postman (any rest cleint)
+ - Maven 3.3
+ - Postman (or any rest cleint)
+ - Download/clone the project from GitHub repository.
  
- 
-**Swagger Documentation path:**
-
-https://documenter.getpostman.com/view/534845/RW87p9pT
-
-**Postman document of Test cases:**
-
-https://documenter.getpostman.com/view/534845/RW87p9pT
-
- 
+  
 **To execute Test cases and Integration Test:**
 
  ```sh
-  mvn clean test
+  mvn clean test (From the project folder execute the command from command promot)
 ```
 **To start Mongo DB**
  
@@ -42,6 +35,25 @@ C:\Program Files\MongoDB\Server\3.2\bin>mongod (by default, mongodb server will 
  ```sh
   mvn spring-boot:run -Dspring.profiles.active=dev  (Tomcat will starts on default port 8080)
 ```
+
+**Application endpoints:
+ 
+ ```sh
+ Get Method  : http://localhost:8080/products/v1/product/{productid}   (Not secured)
+ 
+ Post Method : http://localhost:8080/products/v1/product  (secured- Admin/Admin)
+  ```
+ 
+ 
+**Swagger Documentation link:**
+
+http://localhost:8080/swagger-ui.html#/product-controller
+
+**Postman document of Test cases:**
+
+https://documenter.getpostman.com/view/534845/RW87p9pT
+
+
 **Features:**
  - **Basic Authentication:**
     - Get method to fecth the product info, will be access to all.
